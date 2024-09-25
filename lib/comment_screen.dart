@@ -158,15 +158,49 @@ class CommentScreen extends StatelessWidget {
                                   ),
                                   child: AspectRatio(
                                     aspectRatio: 1,
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(300),
-                                      child: Image.asset(
-                                        comment.account.imageAsset,
-                                        fit: BoxFit.cover,
+                                    child: Container(
+                                      clipBehavior: Clip.antiAlias,
+                                      padding: const EdgeInsets.all(2.0),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: const Color(0xFF0779B8),
+                                          width: 1,
+                                        ),
+                                        borderRadius: BorderRadius.circular(80),
+                                      ),
+                                      child: ClipRRect(
+                                        borderRadius:
+                                            BorderRadius.circular(300),
+                                        child: Image.asset(
+                                          comment.account.imageAsset,
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
+//
+                                // Container(
+                                //   clipBehavior: Clip.antiAlias,
+                                //   padding: const EdgeInsets.all(2.0),
+                                //   decoration: BoxDecoration(
+                                //     border: Border.all(
+                                //       color: const Color(0xFF0779B8),
+                                //       width: 2,
+                                //     ),
+                                //     borderRadius: BorderRadius.circular(80),
+                                //   ),
+                                //   child: ClipRRect(
+                                //     borderRadius: BorderRadius.circular(50),
+                                //     child: Image.asset(
+                                //       stories.imageAsset,
+                                //       width: 78,
+                                //       height: 78,
+                                //       fit: BoxFit.cover,
+                                //     ),
+                                //   ),
+                                // ),
+//
                               ),
                               const SizedBox(
                                 height: 15,
