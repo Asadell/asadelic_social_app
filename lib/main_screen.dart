@@ -16,6 +16,7 @@ class MainScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
+          scrolledUnderElevation: 0,
           title: RichText(
             text: const TextSpan(
               children: [
